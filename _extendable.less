@@ -1,0 +1,185 @@
+._pa {
+  position: absolute;
+}
+
+._pr {
+  position: relative;
+}
+
+._vh {
+  visibility: hidden;
+  ._pa();
+}
+
+._fw {
+  width: 100%;
+}
+
+._fh {
+  height: 100%;
+}
+
+._fs {
+  ._fw();
+  ._fh();
+}
+
+._fr {
+  float: right;
+  display: inline;
+}
+
+._fl {
+  float: left;
+  display: inline;
+}
+
+._bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+._bg-size-cover {
+  ._bg-no-repeat();
+  background-size: cover;
+}
+
+._bg-size-contain {
+  ._bg-no-repeat();
+  background-size: contain;
+}
+
+._uppercase {
+  text-transform: uppercase;
+}
+
+._text-center {
+  text-align: center;
+}
+
+._text-left {
+  text-align: left;
+}
+
+._no-wrap {
+  white-space: nowrap;
+}
+
+._align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+._no-padding {
+  padding: 0;
+}
+
+._scrollable {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+._touch-thru {
+  pointer-events: none;
+  -ms-touch-action: none;
+  // visibility: hidden\9;
+}
+
+._box-sizing-border-box {
+  .box-sizing(border-box);
+}
+
+._box-sizing-content-box {
+  .box-sizing(content-box);
+}
+
+._block {
+  display: block;
+}
+
+._inline-block {
+  display: inline-block;
+}
+
+._hide {
+  display: none;
+}
+
+._no-border {
+  border: none;
+}
+
+._fl {
+  .float(left);
+}
+
+._fr {
+  .float(right);
+}
+
+._clear {
+  clear: both;
+}
+
+._clearfix {
+  .pie-clearfix();
+}
+
+._vertical-middle {
+  vertical-align: middle;
+}
+
+/*._transform-transition {
+  .transition(transform 0.5s cubic-bezier(.28,1,.27,1));
+}
+
+._opacity-transition {
+  .transition(opacity 0.5s cubic-bezier(.28,1,.27,1));
+}*/
+
+._table-cell {
+  display: table-cell;
+}
+
+._table {
+  display: table;
+}
+
+._overflow-hidden {
+  overflow: hidden;
+}
+
+._float-all-in-one {
+  ._fl();
+  ._fw();
+  ._opacity-touch-off();
+  margin-right: -100%;
+}
+
+._opacity-touch-off {
+  .opacity(0);
+  ._touch-thru();
+}
+
+._opacity-touch-on {
+  .opacity(1);
+  pointer-events: auto;
+  visibility: visible\9;
+}
+
+._GPU {
+  .perspective(1000);
+  .backface-visibility(hidden);
+}
+
+._GPU-FORCE {
+  .translateZ(0);
+  .backface-visibility(hidden);
+}
+
+._GPU-FORCE-3D {
+  .translate3d(0,0,0);
+}
+
+/*********************************************/

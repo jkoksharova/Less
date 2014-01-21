@@ -1,0 +1,366 @@
+ /* custom dropdown for buy now */
+
+.modal-dim {
+    background-color: #000000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3100;
+}
+.buy-now-lightbox * {
+   box-sizing: content-box;
+  -moz-box-sizing: content-box; 
+}
+.buy-now-lightbox {
+  display: none;
+  margin: 0 auto 0 -490px;
+  height: auto; 
+  background: #f8f8f8;
+  z-index: 5000;
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+    @media (min-width: 1024px) {
+    width: 980px;
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+    width: 700px;
+    margin-left: -350px;
+    }
+}
+.buy-now-header h2 {  
+  color: #fff!important;
+  font-size: 32px;
+  position: relative;
+  width: 40%;
+} 
+.buy-now-header,
+.buy-now-body {
+  float: left;
+  width: 100%;
+}
+
+.buy-now-header .bg-blue,
+.buy-now-header .bg-grey {
+  padding: 15px 30px 30px 30px; 
+}
+.buy-now-header .bg-blue {
+  background: #0098db;
+  height: 30px;
+}
+.buy-now-header .bg-grey {
+   background: #F1F1F1;
+   height: 35px;
+}
+.buy-now-header .bg-blue h2 {
+  float: left;
+  margin: 5px 0 0;
+}
+.buy-now-header .contacts {
+  float: right;
+  width:auto;
+}
+.buy-now-header .contacts p {
+  margin: 0;
+  color: #054663;
+  font-size: 16px;
+}
+.buy-now-header .contacts li, .buy-now-header .contacts a {
+        color: #fff;
+        float: left;
+        font-family: 'DINOTMedium', "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+}
+
+.buy-now-header .contacts a {
+        text-decoration: none;
+}
+.buy-now-header .contacts ul {
+  list-style-type: none;
+  margin: 0;
+}
+.buy-now-header .contacts .PBStepsNavPhone {
+        background: url(/images/icons/bn-icon-phone.png) no-repeat 0 4px;
+        padding-left: 20px;
+        margin-right: 20px;
+    line-height: 21px;
+}
+
+.buy-now-header .contacts .PBStepsNavChat {
+        background: url(/images/icons/bn-icon-chat.png) no-repeat 0 4px;
+        padding-left: 20px;
+}
+.buy-now-header .PBStepsBar {
+        float: left;
+        font-size: 13px;
+        height: 30px;
+        list-style: none outside none;
+        margin: 10px 0 0;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+}
+
+.buy-now-header .PBStepsBar li {
+          background-color: #ddd;
+        background-image: url("/images/sprites/wizard-steps.gif");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        float: left;
+        padding: 0 0 0 14px;
+}
+
+.buy-now-header .PBStepsBar li:first-child {
+        background-image: none;
+        padding-left: 0;
+}
+
+.buy-now-header .PBStepsBar li:first-child a, .buy-now-header .PBStepsBar li:first-child span {
+        padding-left: 12px;
+}
+
+.buy-now-header .PBStepsBar li a, .buy-now-header .PBStepsBar li span {
+        padding: 0 21px;
+}
+
+.buy-now-header .PBStepsBar li a, .buy-now-header .PBStepsBar li span {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+}
+
+.buy-now-header .PBStepsBar li a, .buy-now-header .PBStepsBar li span {
+        color: #999;
+        text-decoration: none;
+}
+
+.buy-now-header .PBStepsBar li.current {
+        background-position: 0 -30px;
+}
+
+.buy-now-header .PBStepsBar li.current span {
+        background-color: #0098db;
+        color: #FFFFFF;
+        border-bottom: 1px solid #9dd0e1;
+}
+
+.buy-now-header .PBStepsBar li.current + li {
+        background-position: 0 -60px;
+}
+
+.buy-now-header .PBStepsBar li:first-child a, .buy-now-header .PBStepsBar li:first-child span {
+        border-radius: 6px 0 0 6px;
+        padding: 0 32px 0 32px;
+}
+
+.buy-now-header .PBStepsBar li.complete + li.current {
+        background: transparent url("/images/sprites/wizard-steps.gif") no-repeat 1px -30px;
+}
+
+.buy-now-header .PBStepsBar li.complete a, .buy-now-header .PBStepsBar li.complete span {
+        color: #1a1a1a;
+}
+
+.buy-now-header .PBStepsBar a {
+        text-decoration: none;
+        color: #a5a5a6;
+}
+.buy-now-body .short-plans th {
+  width: 15%;
+   @media (min-width: 768px) and (max-width: 979px) {
+   width: 22%;
+    }
+}
+.buy-now-body .short-plans tbody td {
+  width: 21%;
+  border-left: 1px solid #ddd;
+  padding: 5px 30px;
+    @media (min-width: 768px) and (max-width: 979px) {
+    width: 19%;
+    }
+}
+
+.buy-now-body .short-plans td.check-hover {
+    background: #f1f1f1;
+   
+}
+.buy-now-body .short-plans td.jsp {
+    background: #e6e6e6; 
+    border-left: 2px solid #98BC33;
+    border-right: 2px solid #98BC33;
+}
+.buy-now-body .short-plans .last-row td.jsp {
+    border-bottom: 2px solid #98BC33;
+}
+.buy-now-body .short-plans .plan-name td.jsp {
+    border-top: 2px solid #98BC33;
+}
+.buy-now-body .short-plans thead td {
+  font-family: "DINOTBold";
+  font-size: 20px;
+  vertical-align: top;
+  padding: 10px 30px 0 30px;
+  border-left: 1px solid #ddd;
+    @media (min-width: 768px) and (max-width: 979px) {
+    padding: 10px 10px 0;
+    }
+}
+.buy-now-body .short-plans thead .prices td {
+  padding: 0 30px 10px;
+    @media (min-width: 768px) and (max-width: 979px) {
+    padding: 0 10px 10px;
+    }
+}
+.buy-now-body .short-plans .prices td {
+  vertical-align: bottom;
+}
+.buy-now-body .short-plans thead td span {
+  font-size: 20px;
+  display: block;
+}
+.buy-now-body .short-plans .plan-price-bundle {
+  position: relative;
+  top: 5px;
+}
+.buy-now-body .short-plans .plan-price-bundle span {
+  display: inline;
+  color: #888;
+}
+.buy-now-lightbox .plan-price-bundle .currency {
+  font-size: 15px;
+  position: relative;
+  top: -0.5em;
+  font-family: "DINOTBold";
+}
+.buy-now-body .plan-price-bundle .PriceNum {
+  font-size: 26px;
+  font-family: "DINOTBold";
+}
+
+.buy-now-body .short-plans thead .prices,
+.buy-now-body .short-plans tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.buy-now-body .short-plans tbody tr {
+  height: 60px;
+}
+.buy-now-body .short-plans tbody th {
+  font-size: 14px;
+  color: #1797d4;
+  font-weight: normal;
+  text-align: left;
+  padding: 5px 20px 5px 30px;
+}
+.buy-now-body .short-plans tfoot td {
+  padding: 5px 20px 5px 30px;
+}
+.buy-now-body .short-plans .check,
+.buy-now-body .short-plans .check-hover .check {
+  background: transparent url("/images/icons/bn-grey-check.png") no-repeat 0 0;
+  width: 20px;
+  height: 18px;
+  display: block;
+  margin: 0 auto;
+}
+.buy-now-body .short-plans .check-hover .check {
+    background: transparent url("/images/icons/bn-green-check.png") no-repeat 0 0;
+}
+.bn-controls {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.bn-controls .form-control {
+  width: 75px;
+  color: #1a1a1a;
+  margin-top: -5px;
+  margin-left: 7px;
+  font-size: 18px;
+  display: inline;
+  height: 15px;
+  padding: 6px 12px;
+  line-height: auto;
+}
+.bn-controls .choose-quantity {
+  width: 45%;
+  float: left;
+  padding: 10px 0 30px 70px;
+}
+.choose-quantity .plan-price-bundle {
+  margin-left: 10px;
+}
+.choose-quantity .error {
+  font-size: 13px;
+  display: block;
+  color: #ED1C24;
+}
+.choose-quantity .result {
+  font-family: "DINOTMedium";
+  color: #1a1a1a;
+  font-size: 24px;
+  width: auto;
+}
+.bn-controls p {
+  font-family: "DINOTRegular";
+  font-size: 18px;
+}
+.bn-controls .note {
+  font-family: inherit;
+  font-size: 14px;
+  color: #888;
+}
+.bn-ctas {
+  float: right;
+  width: 40%;
+  margin-top: 25px;
+  text-align: right;
+  color: #888;
+  padding: 30px 30px 30px 0;
+    @media (min-width: 768px) and (max-width: 979px) {
+    padding: 0 30px 30px 0;
+    }
+}
+.bn-ctas .btn {
+  display: inline-block;
+  width: 40%;
+  padding: 8px 5px;
+    @media (min-width: 768px) and (max-width: 979px) {
+   margin: 0.5em 0;
+    width: 70%;
+    }
+} 
+.bn-ctas span {
+  margin: 0 15px;
+    @media (min-width: 768px) and (max-width: 979px) {
+    margin: 0.5em 0;
+     display: block;
+    float: right;
+    text-align: center;
+    width: 75%;
+    }
+}
+.btn-transparent {
+  font-size: 15px;
+  text-decoration: none!important;
+  color: #1797d4;
+  border: 1px solid #ddd;
+  background: transparent;
+  text-shadow: none;
+} 
+.btn-transparent:hover {
+  background: #ddd;
+  color: #1797d4;
+  border: 1px solid #ddd;
+}
+
+.close-icon img {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
